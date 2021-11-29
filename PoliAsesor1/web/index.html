@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Inicio</title>
+        <link rel="shortcut icon" href="img/xxx.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link  rel="stylesheet" href="css/index.css">
+        <script>
+            document.onkeydown = function (e) {
+         
+                // disable F12 key
+                if(e.keyCode == 123) {
+                    return false;
+                }
+                
+         
+                // disable I key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
+                    return false;
+                }
+         
+                // disable J key
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+                    return false;
+                }
+         
+                // disable U key
+                if(e.ctrlKey && e.keyCode == 85) {
+                    return false;
+                }
+            }
+            document.addEventListener('contextmenu', event => event.preventDefault());
+            </script>
+    </head>
+    <body style=" background-image: url(img/aa.png);background-repeat: no-repeat
+          ;background-size: auto">
+        <ul>
+            <li>
+              <img class="ipn" src="img/logo.png">
+            </li>
+            
+            <li style="float: right;" >
+                <a href="Inicio.jsp">Iniciar Sesíon</a>
+            </li>
+            <li class="infoimg"  style="float: right;">
+                    <a href="info.html"><img src="img/info.png"></a>
+            </li>
+            
+        </ul>
+        <div> 
+            <img src="img/Poliasesor.png"> 
+            
+        </div>
+        <div id="2"><a class="button" href="Inicio.jsp">Iniciar Sesíon</a></div>
+    </body>
+</html>
